@@ -10,7 +10,7 @@ import {
   DiSass,
 } from "react-icons/di";
 
-import {SiTypescript} from 'react-icons/si'
+import { SiTypescript } from "react-icons/si";
 
 import {
   Flex,
@@ -19,11 +19,9 @@ import {
   Box,
   HStack,
   Circle,
-  Grid,
   VStack,
   Container,
   Spacer,
-  color,
 } from "@chakra-ui/react";
 
 export default function Home() {
@@ -148,129 +146,156 @@ export default function Home() {
         width="99vw"
         p={20}
         bg="#363636"
-        display="flex"
         flexDirection="column"
         align="center"
         justifyContent="center"
       >
-        <HStack>
+        <HStack spacing={8}>
           <Box
-            w={230}
-            h={230}
-            boxShadow="dark-lg"
             bg="#2A2A2A"
+            w={180}
+            h={180}
+            boxShadow="dark-lg"
             fontWeight="bold"
-            fontSize="3xl"
+            fontSize="xl"
             p={4}
             style={{ borderRadius: "10px" }}
-            centerAlign="center"
-            textAlign="center"
-            justifyContent="center"
+            display="flex"
+            flexDirection="column"
+            align="center"
           >
             Front-End
-            <Icon as={DiReact} boxSize={40} color="#00D8FF" />
+            <Spacer />
+            <Icon
+              alignSelf="center"
+              as={DiReact}
+              boxSize="90px"
+              color="#00D8FF"
+            />
           </Box>
 
           <Box
-            w={230}
-            h={230}
             bg="#2A2A2A"
+            w={180}
+            h={180}
             boxShadow="dark-lg"
             fontWeight="bold"
-            fontSize="3xl"
+            fontSize="xl"
             p={4}
             style={{ borderRadius: "10px" }}
-            centerAlign="center"
-            textAlign="center"
-            justifyContent="center"
+            display="flex"
+            flexDirection="column"
+            align="center"
           >
             Back-End
-            <Icon as={DiNodejs} boxSize={40} color="#44D361" />
+            <Spacer />
+            <Icon
+              alignSelf="center"
+              as={DiNodejs}
+              boxSize="90px"
+              color="#44D361"
+            />
           </Box>
 
           <Box
-            w={230}
-            h={230}
             bg="#2A2A2A"
+            w={180}
+            h={180}
             boxShadow="dark-lg"
             fontWeight="bold"
-            fontSize="3xl"
+            fontSize="xl"
             p={4}
             style={{ borderRadius: "10px" }}
-            centerAlign="center"
-            textAlign="center"
-            justifyContent="center"
+            display="flex"
+            flexDirection="column"
+            align="center"
           >
             Postgres
-            <Icon as={DiPostgresql} boxSize={40} color="gray.50"></Icon>
+            <Spacer />
+            <Icon
+              alignSelf="center"
+              as={DiPostgresql}
+              boxSize="90px"
+              color="gray.50"
+            ></Icon>
           </Box>
+
           <Box
-            w={230}
-            h={230}
             bg="#2A2A2A"
-            fontWeight="bold"
+            w={180}
+            h={180}
             boxShadow="dark-lg"
-            fontSize="3xl"
+            fontWeight="bold"
+            fontSize="xl"
             p={4}
             style={{ borderRadius: "10px" }}
-            textAlign="center"
-            centerAlign="center"
-            justifyContent="center"
+            display="flex"
+            flexDirection="column"
+            align="center"
           >
             JavaScript
-            <Icon as={DiJavascript} boxSize={40} color="yellow"></Icon>
+            <Spacer />
+            <Icon
+              alignSelf="center"
+              as={DiJavascript}
+              boxSize="90px"
+              color="yellow"
+            ></Icon>
           </Box>
         </HStack>
 
-        <HStack m={10}>
+        <HStack spacing={8} mt={10}>
           <Box
-            w={230}
-            h={230}
-            bg="#2A2A2A"
-            fontWeight="bold"
-            fontSize="3xl"
-            boxShadow="dark-lg"
-            p={4}
-            style={{ borderRadius: "10px" }}
-            textAlign="center"
-            centerAlign="center"
-            justifyContent="center"
+              bg="#2A2A2A"
+              w={180}
+              h={180}
+              boxShadow="dark-lg"
+              fontWeight="bold"
+              fontSize="xl"
+              p={4}
+              style={{ borderRadius: "10px" }}
+              display="flex"
+              flexDirection="column"
+              align="center"
           >
             Sass
-            <Icon as={DiSass} boxSize={40} color="#CE679B" />
+            <Spacer />
+            <Icon alignSelf="center"  as={DiSass} boxSize="90px" color="#CE679B" />
           </Box>
 
           <Box
-            w={230}
-            h={230}
-            bg="#2A2A2A"
-            fontWeight="bold"
-            boxShadow="dark-lg"
-            fontSize="3xl"
-            p={4}
-            style={{ borderRadius: "10px" }}
-            textAlign="center"
-            centerAlign="center"
-            justifyContent="center"
+               bg="#2A2A2A"
+               w={180}
+               h={180}
+               boxShadow="dark-lg"
+               fontWeight="bold"
+               fontSize="xl"
+               p={4}
+               style={{ borderRadius: "10px" }}
+               display="flex"
+               flexDirection="column"
+               align="center"
           >
             CSS
-            <Icon as={DiCss3} boxSize={40} color="#264BDD"/>
+            <Spacer />
+            <Icon alignSelf="center"  as={DiCss3} boxSize="90px" color="#264BDD" />
           </Box>
           <Box
-            w={230}
-            h={230}
-            bg="#2A2A2A"
-            fontWeight="bold"
-            fontSize="3xl"
-            boxShadow="dark-lg"
-            p={4}
-            style={{ borderRadius: "10px" }}
-            textAlign="center"
-            centerAlign="center"
-            justifyContent="center"
+              bg="#2A2A2A"
+              w={180}
+              h={180}
+              boxShadow="dark-lg"
+              fontWeight="bold"
+              fontSize="xl"
+              p={4}
+              style={{ borderRadius: "10px" }}
+              display="flex"
+              flexDirection="column"
+              align="center"
           >
             TypeScript
-            <Icon as={SiTypescript} boxSize={40} color="#264BDD"/>
+            <Spacer />
+            <Icon alignSelf="center" as={SiTypescript} boxSize="90px" color="#264BDD" />
           </Box>
         </HStack>
 
@@ -280,21 +305,20 @@ export default function Home() {
           align="center"
           flex-direction="column"
           mt={70}
-  
         >
           <Text bg="black" position="absolute">
             {" "}
             haususauhsauhhsuauhas{" "}
           </Text>
-          <Circle size={600} bg="white">
+          <Circle size={800} bg="white">
             {" "}
           </Circle>
           <VStack>
-            <Circle size={230} bg="white">
+            <Circle size={190} bg="white">
               {" "}
             </Circle>
             <Spacer />
-            <Circle size={230} bg="white">
+            <Circle size={190} bg="white">
               {" "}
             </Circle>
           </VStack>
