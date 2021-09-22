@@ -99,7 +99,10 @@ export default function Home() {
               border="35px solid #44D361"
               style={{ boxShadow: "0 0 60px #03D361" }}
             >
-              <Image width="360" src={avatar} alt="avatar" />
+              <Box mb={-124}  style={{ boxShadow: "6 0 0px #0c0c0c" }} >
+              <Image  width="460" height="660" src={avatar} alt="avatar" />  
+              </Box>
+              
             </Circle>
             <Circle
               size={70}
@@ -323,7 +326,21 @@ export default function Home() {
             </Circle>
           </VStack>
         </Box>
+   
       </Flex>
+
+      <Flex
+        as="section"
+        width="99vw"
+        h="100vh"
+        p={20}
+        flexDirection="column"
+        align="center"
+        justifyContent="center"
+       >
+
+
+       </Flex>
     </>
   );
 }
